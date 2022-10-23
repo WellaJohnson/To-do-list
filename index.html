@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Roboto:ital,wght@0,400;1,400;1,900&display=swap");
     </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Pacifico&family=Roboto:ital,wght@0,400;1,400;1,900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>To do list</title>
   </head>
   <body>
-    <h1>To do list</h1>
+    <header>
+      <h1>To do list</h1>
+      <i class="fa-solid fa-fish"></i>
+    </header>
+    <br />
+    <br />
     <br />
     <a
       class="image"
@@ -21,7 +36,7 @@
     >
       <img
         alt="text alternatif pour le lien image"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThHvfesTjnYVWZUvoCvv-TglqyGypGMWrGsmu3Q-0X37O-NKLGMGqNqbC5hLyoyN3bXc&usqp=CAU"
+        src="https://png.pngtree.com/png-vector/20191001/ourmid/pngtree-light-bulb-icon-vector-light-bulb-ideas-symbol-illustration-png-image_1773934.jpg"
         height="100px"
       />
     </a>
@@ -30,32 +45,12 @@
     <br />
     <form>
       <input type="text" class="todoInput" />
-      <input class="todoButton" type="submit" value="Add" />
+      <button class="todoButton" type="submit" value="Add">
+        <i class="fa-solid fa-plus-square"></i>
+      </button>
     </form>
     <div class="container">
-      <ul class="todoList">
-        <li>
-          <p>Task 1</p>
-          <div>
-            <button>Done</button>
-            <button>Delete</button>
-          </div>
-        </li>
-        <li>
-          <p>Task 2</p>
-          <div>
-            <button>Done</button>
-            <button>Delete</button>
-          </div>
-        </li>
-        <li>
-          <p>Task 3</p>
-          <div>
-            <button>Done</button>
-            <button>Delete</button>
-          </div>
-        </li>
-      </ul>
+      <ul class="todoList"></ul>
     </div>
   </body>
   <script src="./script/script.js"></script>
