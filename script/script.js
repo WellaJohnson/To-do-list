@@ -58,25 +58,13 @@ function deleteCheck(e) {
   // Delete Todo
   if (item.classList[0] === "trash-btn") {
     const todo = item.parentElement;
-    todo.classList.add("fall");
-    todo.addEventListener("transitionend", function () {
-      todo.remove();
-    });
+    todo.remove();
   }
+
   // Chcek mark
+
   if (item.classList[0] === "complete-btn") {
     const todo = item.parentElement;
     todo.classList.toggle("complete");
   }
 }
-// function savelocaTodos() {
-//   // checker si il y a des item existant
-//   let todos;
-//   if (localStorage.getItem["todos"] === null) {
-//     todos = [];
-//   } else {
-//     todos = JSON.parse(localStorage.getItem("todos"));
-//   }
-//   todos.push(todo);
-//   localStorage.setItem("todos", JSON.stringify(todos));
-// }
